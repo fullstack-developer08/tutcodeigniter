@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-if(gethostname() === 'Ayesha-PC')){
+if(gethostname() === 'Ayesha-PC'){
     $config['base_url'] = 'http://localhost/way2p-tuts';
 } else {
     $config['base_url'] = 'http://tutorials.way2programming.com';
