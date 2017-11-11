@@ -1,12 +1,12 @@
 <div class="panel panel-primary">
 	<div class="panel panel-heading">
-        Git files with out repository name or folder.
+        Copy only files from GIT repository.
 	</div>
-	<div class="panel panel-content">
+	<div class="panel panel-heading">
 		<pre class="prettyprint">
-            > git init
-            > git remote add origin GIT_URL
-            > git pull origin master
+> git init
+> git remote add origin GIT_URL
+> git pull origin master
        </pre>
 	</div>
 </div>
