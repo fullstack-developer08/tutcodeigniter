@@ -23,9 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$whitelist = array('127.0.0.1', "::1");
 
-if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+if(gethostname() === 'Ayesha-PC')){
     $config['base_url'] = 'http://localhost/way2p-tuts';
 } else {
     $config['base_url'] = 'http://tutorials.way2programming.com';
