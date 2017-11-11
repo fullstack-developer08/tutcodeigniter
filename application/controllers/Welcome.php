@@ -31,6 +31,7 @@ class Welcome extends CI_Controller {
 		$header['keywords']='';
 		$header['description']='';
 		$this->load->view('header',$header);
+		$this->load->view('home');
 		$this->load->view('footer');
 	}
 }

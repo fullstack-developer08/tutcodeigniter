@@ -13,13 +13,14 @@
 	<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
+      <br/><br/>
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- adds -->
 	<ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-3756561296299065" data-ad-slot="4296846636" data-ad-format="auto"></ins>
 	<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
-	
+	<br/><br/>
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- adds -->
 	<ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-3756561296299065" data-ad-slot="4296846636" data-ad-format="auto"></ins>
@@ -45,6 +46,11 @@
 
 </script>
 <!--End of Zopim Live Chat Script-->
+
+
+<!-- Popper JS -->
+<script src="<?php echo base_url();?>assets/js/popper.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
