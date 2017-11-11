@@ -15,7 +15,7 @@ class Tutorials extends CI_Controller {
 		$header['keywords'] = '';
 		$header['description'] = '';
 		$this->load->view('header', $header);
-        $this->load->view('tutorials/git/gitCopyFilesWithOutFolder', $header);
+        $this->load->view('tutorials/git/gitCopyFilesWithOutFolder');
 		$this->load->view('footer');
 	}
 }
