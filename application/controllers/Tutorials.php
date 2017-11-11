@@ -9,13 +9,15 @@ class Tutorials extends CI_Controller {
 	}
 
 	public function gitCopyFilesWithOutFolder() {
-		$header['title'] = 'Git files with out repository name or folder';
-		$header['heading'] = 'Git files with out repository name or folder';
+		$header['title'] = 'copy only git files with out repository name or folder';
+		$header['heading'] = 'copy only git files with out repository name or folder';
 		$header['keywords'] = '';
 		$header['description'] = '';
 		$this->load->view('header', $header);
         $this->load->view('tutorials/git/gitCopyFilesWithOutFolder');
 		$this->load->view('footer');
 	}
+
+    
 
 }

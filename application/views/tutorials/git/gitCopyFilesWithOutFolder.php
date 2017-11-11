@@ -2,7 +2,7 @@
 	<div class="panel panel-heading">
         Copy only files from GIT repository.
 	</div>
-	<div class="panel panel-heading">
+	<div class="panel panel-content">
 		<pre class="prettyprint">
 > git init
 > git remote add origin GIT_URL
