@@ -46,42 +46,11 @@
          })(window,document,'script','dataLayer','GTM-TZXQ7F');
       </script>
       <!-- End Google Tag Manager -->
-      <nav class="navbar navbar-inverse">
-         <div class="container">
-            <div class="navbar-header">
-               <!-- Collapsed Hamburger -->
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-               <span class="sr-only">Toggle Navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <!-- Branding Image -->
-               <a class="navbar-brand" href="<?php echo base_url();?>">
-               Way2Programming.com
-               </a>
-            </div>
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-               <!-- Left Side Of Navbar -->
-               <ul class="nav navbar-nav">
-                  <li><a href="#"></a></li>
-               </ul>
-               <!-- Right Side Of Navbar -->
-               <ul class="nav navbar-nav navbar-right">
-                  <!-- Authentication Links -->
-                  <li><a href="<?php echo base_url();?>contact">Contact Us</a></li>
-                  <!-- <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      <span class="caret"></span>
-                     </a>
-                     <ul class="dropdown-menu" role="menu">
-                        <li><a href=""><i class="fa fa-btn fa-sign-out"></i></a></li>
-                     </ul>
-                  </li> -->
-               </ul>
-            </div>
-         </div>
-      </nav>
+        <nav class="navbar navbar-light bg-primary">
+            <a class="navbar-brand" href="<?php echo base_url();?>">
+                Tutorials
+            </a>
+        </nav>
       <div class="header_bg">
       <div class="container-fluid">
          <div class="header">
