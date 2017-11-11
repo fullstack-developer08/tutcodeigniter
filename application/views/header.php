@@ -54,27 +54,14 @@
                 way2programming.com
             </span>
         </nav>
-      <div class="header_bg">
+      
       <div class="container-fluid">
-         <div class="header">
-            <div class="head-t">
-               <!--  <div class="logo" >
-                  <a href="index.php"><h1>Way2Programming<span>.com</span></h1> </a>
-                  </div> -->
-               <div class="header_right">
-                  <div class="cart box_1">
-                     <div class="clearfix"> </div>
-                  </div>
-               </div>
-               <div class="clearfix"></div>
-            </div>
+            <br/>
             <!--start-header-menu-->
             <ul class="megamenu skyblue">
                <li class="grid"><a class="color1" href="<?php echo base_url();?>">Home</a></li>
             </ul>
-            <br />
-            <div class="container-fluid">
-               <div class="col-md-9">
-                  <br/><br/>
+            <div class="row">
+            <div class="col-sm-9">
                   <h1><?php echo $heading?></h1>
                   <hr />
