@@ -1,24 +1,12 @@
 <div class="panel panel-primary">
 	<div class="panel panel-heading">
-
+        Git files with out repository name or folder.
 	</div>
 	<div class="panel panel-heading">
-		<h2></h2>
 		<pre class="prettyprint">
-      
-       </pre>
-
-
-
-		<h2></h2>
-		<pre class="prettyprint">
- 
-
-       </pre>
-
-		<h2>app.component.ts</h2>
-		<pre class="prettyprint">
-         
+            > git init
+            > git remote add origin GIT_URL
+            > git pull origin master
        </pre>
 	</div>
 </div>
