@@ -9,7 +9,7 @@
       <meta name="robots" content="index, follow">
       <meta name="keywords" content="<?php echo $keywords ?>" />
       <meta name="description"  content="<?php echo $description ?>" />
-      <link href='<?php echo base_url();?>assets/css/bootstrap.css'' rel='stylesheet' type='text/css' />
+      <link href='<?php echo base_url();?>assets/css/bootstrap.min.css'' rel='stylesheet' type='text/css' />
       <!-- Custom Theme files -->
       <link href="<?php echo base_url();?>assets/css/style.css" rel='stylesheet' type='text/css' />
       <script src="<?php echo base_url();?>assets/js/jquery-1.11.1.min.js"></script>

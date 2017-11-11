@@ -18,6 +18,16 @@ class Tutorials extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+    public function gitStoreCredentialsInStore() {
+		$header['title'] = 'store credentials in git when it ask every time';
+		$header['heading'] = 'store credentials in git when it ask every time';
+		$header['keywords'] = '';
+		$header['description'] = '';
+		$this->load->view('header', $header);
+        $this->load->view('tutorials/git/gitStoreCredentialsInStore');
+		$this->load->view('footer');
+	}
+
     
 
 }
