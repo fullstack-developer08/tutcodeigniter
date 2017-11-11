@@ -9,18 +9,18 @@
       <meta name="robots" content="index, follow">
       <meta name="keywords" content="<?php echo $keywords ?>" />
       <meta name="description"  content="<?php echo $description ?>" />
-      <link href='<?php echo base_url();?>static/css/bootstrap.css'' rel='stylesheet' type='text/css' />
+      <link href='<?php echo base_url();?>assets/css/bootstrap.css'' rel='stylesheet' type='text/css' />
       <!-- Custom Theme files -->
-      <link href="<?php echo base_url();?>static/css/style.css" rel='stylesheet' type='text/css' />
+      <link href="<?php echo base_url();?>assets/css/style.css" rel='stylesheet' type='text/css' />
       
-      <script src="<?php echo base_url();?>static/js/jquery-1.11.1.min.js"></script>
-      <script src="<?php echo base_url();?>static/js/bootstrap.min.js"></script>
+      <script src="<?php echo base_url();?>assets/js/jquery-1.11.1.min.js"></script>
+      <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
       <!-- start menu -->
-      <link href="<?php echo base_url();?>static/css/megamenu.css" rel="stylesheet" type="text/css"
+      <link href="<?php echo base_url();?>assets/css/megamenu.css" rel="stylesheet" type="text/css"
          media="all" />
-      <script type="text/javascript" src="<?php echo base_url();?>static/js/megamenu.js"></script>
+      <script type="text/javascript" src="<?php echo base_url();?>assets/js/megamenu.js"></script>
       <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-      <script src="<?php echo base_url();?>static/js/menu_jquery.js"></script>
+      <script src="<?php echo base_url();?>assets/js/menu_jquery.js"></script>
       <!--web-fonts-->
       <link
          href='//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,700'
@@ -28,7 +28,7 @@
       <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700'
          rel='stylesheet' type='text/css'>
       <!--//web-fonts-->
-      <script src="<?php echo base_url();?>static/js/scripts.js" type="text/javascript"></script>
+      <script src="<?php echo base_url();?>assets/js/scripts.js" type="text/javascript"></script>
       <script type="text/javascript">
          jQuery(document).ready(function($) {
          	$(".scroll").click(function(event){		
@@ -37,8 +37,8 @@
          	});
          });
       </script>
-      <script type="text/javascript" src="<?php echo base_url();?>static/js/prettify.js"></script>
-      <script type="text/javascript" src="<?php echo base_url();?>static/js/run_prettify.js"></script>
+      <script type="text/javascript" src="<?php echo base_url();?>assets/js/prettify.js"></script>
+      <script type="text/javascript" src="<?php echo base_url();?>assets/js/run_prettify.js"></script>
 
    </head>
    <body>
