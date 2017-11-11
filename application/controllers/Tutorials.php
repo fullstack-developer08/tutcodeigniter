@@ -8,7 +8,7 @@ class Tutorials extends CI_Controller {
 		$this->load->helper('url');
 	}
 
-	public function index()
+	public function gitCopyFilesWithOutFolder()
 	{
 		$header['title'] = 'Git files with out repository name or folder';
 		$header['heading'] = '';
