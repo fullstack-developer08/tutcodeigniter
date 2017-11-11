@@ -46,10 +46,13 @@
          })(window,document,'script','dataLayer','GTM-TZXQ7F');
       </script>
       <!-- End Google Tag Manager -->
-        <nav class="navbar navbar-light bg-primary">
+        <nav class="navbar navbar-dark bg-primary">
             <a class="navbar-brand" href="<?php echo base_url();?>">
                 Tutorials
             </a>
+            <span class="navbar-text">
+                way2programming.com
+            </span>
         </nav>
       <div class="header_bg">
       <div class="container-fluid">
