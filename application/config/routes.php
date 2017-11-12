@@ -56,3 +56,4 @@ $route['translate_uri_dashes'] = FALSE;
 // GIT
 $route['copy-only-files-from-git-repository'] = 'Tutorials/gitCopyFilesWithOutFolder';
 $route['stores-credentials-in-git'] = 'Tutorials/gitStoreCredentialsInStore';
+$route['error-interceptor-in-angularjs'] = 'Tutorials/angularjsErrorInterceptor';

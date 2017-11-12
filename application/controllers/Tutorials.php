@@ -28,6 +28,16 @@ class Tutorials extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function angularjsErrorInterceptor() {
+		$header['title'] = 'error interceptor in angularjs';
+		$header['heading'] = 'error interceptor in angularjs';
+		$header['keywords'] = '';
+		$header['description'] = '';
+		$this->load->view('header', $header);
+        $this->load->view('tutorials/angularjs/angularjsErrorInterceptor');
+		$this->load->view('footer');
+	}
+
     
 
 }
