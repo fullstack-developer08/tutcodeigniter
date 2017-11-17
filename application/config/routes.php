@@ -54,6 +54,13 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // GIT
-$route['copy-only-files-from-git-repository'] = 'Tutorials/gitCopyFilesWithOutFolder';
-$route['stores-credentials-in-git'] = 'Tutorials/gitStoreCredentialsInStore';
-$route['error-interceptor-in-angularjs'] = 'Tutorials/angularjsErrorInterceptor';
+$route['git/copy-only-files-from-git-repository'] = 'Tutorials/gitCopyFilesWithOutFolder';
+$route['git/stores-credentials-in-git'] = 'Tutorials/gitStoreCredentialsInStore';
+
+//Angularjs
+$route['angularjs/error-interceptor-in-angularjs'] = 'Tutorials/angularjsErrorInterceptor';
+
+//Angular2 Angular4
+$route['angular/angular-redux-with-global-error-concept'] = 'Tutorials/angularReduxBasicApp';
+$route['angular/angular-form'] = 'Tutorials/angularForm';
+$route['angular/angular-cli'] = 'Tutorials/angularCli';
