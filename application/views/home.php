@@ -50,4 +50,16 @@
 	<div class="card-footer text-muted">
 
 	</div>
+
+	<div class="card-header">
+		Node js
+	</div>
+	<div class="card-body">
+		<div class="alert alert-success alert-dismissable fade show">
+			<a href="nodejs/how-to-install-nodejs-in-godaddy">install nodejs in godaddy using putty</a>
+		</div>
+	</div>
+	<div class="card-footer text-muted">
+
+	</div>
 </div>

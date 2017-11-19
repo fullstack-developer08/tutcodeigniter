@@ -102,4 +102,17 @@ class Tutorials extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	//nodejs 
+	public function nodejsInstallGodaddy() {
+		$header['title'] = 'How to install nodejs in go daddy using Putty';
+		$header['heading'] = 'How to install nodejs in go daddy using Putty';
+		$header['keywords'] = '';
+		$header['description'] = '';
+		$this->load->view('header', $header);
+        $this->load->view('tutorials/nodejs/nodejsInstallGodaddy');
+		$this->load->view('footer');
+	}
+
+	
+
 }

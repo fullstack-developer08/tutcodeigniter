@@ -67,3 +67,6 @@ $route['angular/angular-cli'] = 'Tutorials/angularCli';
 
 //Linux
 $route['linux/useful-commands'] = 'Tutorials/linuxCmd';
+
+//Nodejs
+$route['nodejs/how-to-install-nodejs-in-godaddy'] = 'Tutorials/nodejsInstallGodaddy';
