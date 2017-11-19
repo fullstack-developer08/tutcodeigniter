@@ -91,4 +91,15 @@ class Tutorials extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	//Ubuntu/Linux command
+	public function linuxCmd() {
+		$header['title'] = 'Some useful cmd';
+		$header['heading'] = 'Some useful cmd';
+		$header['keywords'] = '';
+		$header['description'] = '';
+		$this->load->view('header', $header);
+        $this->load->view('tutorials/linux/linuxCmd');
+		$this->load->view('footer');
+	}
+
 }

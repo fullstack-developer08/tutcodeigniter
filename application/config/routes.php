@@ -64,3 +64,6 @@ $route['angularjs/error-interceptor-in-angularjs'] = 'Tutorials/angularjsErrorIn
 $route['angular/angular-redux-with-global-error-concept'] = 'Tutorials/angularReduxBasicApp';
 $route['angular/angular-form'] = 'Tutorials/angularForm';
 $route['angular/angular-cli'] = 'Tutorials/angularCli';
+
+//Linux
+$route['linux/useful-commands'] = 'Tutorials/linuxCmd';

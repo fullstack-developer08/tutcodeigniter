@@ -38,4 +38,16 @@
 	<div class="card-footer text-muted">
 
 	</div>
+
+	<div class="card-header">
+		Linux Cmd
+	</div>
+	<div class="card-body">
+		<div class="alert alert-success alert-dismissable fade show">
+			<a href="linux/useful-commands">Linux Commands</a>
+		</div>
+	</div>
+	<div class="card-footer text-muted">
+
+	</div>
 </div>

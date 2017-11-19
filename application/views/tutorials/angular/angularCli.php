@@ -17,6 +17,12 @@
       <pre class="prettyprint">
 > ng serve
       </pre>
+
+      <h4 class="card-title">build for production in one package</h4>
+      <pre class="prettyprint">
+// it will create dist folder
+> ng build
+      </pre>
   </div>
   <div class="card-footer text-muted">
   </div>
