@@ -34,6 +34,9 @@
 		<div class="alert alert-success alert-dismissable fade show">
 			<a href="angular/angular-redux-with-global-error-concept">Angular4 with Redux App with Global error concept</a>
 		</div>
+		<div class="alert alert-success alert-dismissable fade show">
+			<a href="angular/angular-form">Angular form</a>
+		</div>
 	</div>
 	<div class="card-footer text-muted">
 
