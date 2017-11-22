@@ -8,7 +8,7 @@
 import { FormGroup, FormControl } from '@angular/forms';
         </pre>
     <p>then we need to create the instance of the FormGroup using new keyword. see given below images.</p>
-    <img src="<?php echo base_url();?>assets/FormGroupInstanceInfo.png" />
+    <img src="<?php echo base_url();?>assets/images/FormGroupInstanceInfo.png" />
     <pre class="prettyprint">
 form = new FormGroup({
     username : new FormControl(),
@@ -19,7 +19,7 @@ form = new FormGroup({
   <hr/>
   <div class="card-body">
     <h4 class="card-title">What is abstract control</h4>
-    <img src="<?php echo base_url();?>assets/abstractControl.png" />
+    <img src="<?php echo base_url();?>assets/images/abstractControl.png" />
     <p>In object oriented programming language we have concept call inheritance. we have multiple classes that should have common
       behaviour and property instead of this implementing common behaviour and property in multiple places we defined that
       once in parent or base class and those other class inherit this property and behaviour from base class.</p>
@@ -59,7 +59,7 @@ export class AppModule { }
 import { FormGroup, FormControl, Validators } from '@angular/forms';
     </pre>
     <p>validator we need to use inside the FormControl so check below image</p>
-    <img src="<?php echo base_url();?>assets/validatorsImport.png"/>
+    <img src="<?php echo base_url();?>assets/images/validatorsImport.png"/>
     <p>if you see above image then FormControl wants that formState as option parameter, formState nothing but predefined value, second parameter is validator function, here validation will go.</p>
     <pre>
 // when validatorFn is have one validation then we need to follow below example
