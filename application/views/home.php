@@ -37,6 +37,9 @@
 		<div class="alert alert-success alert-dismissable fade show">
 			<a href="angular/angular-form">Angular form</a>
 		</div>
+		<div class="alert alert-success alert-dismissable fade show">
+			<a href="angular/angular-reactive-form">Angular Reactive Form</a>
+		</div>
 	</div>
 	<div class="card-footer text-muted">
 

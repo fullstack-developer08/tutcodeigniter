@@ -91,6 +91,16 @@ class Tutorials extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function angularReactiveForm() {
+		$header['title'] = 'Angular Reactive Form';
+		$header['heading'] = 'Angular Reactive Form';
+		$header['keywords'] = '';
+		$header['description'] = '';
+		$this->load->view('header', $header);
+        $this->load->view('tutorials/angular/reactiveform');
+		$this->load->view('footer');
+	}
+
 	//Ubuntu/Linux command
 	public function linuxCmd() {
 		$header['title'] = 'Some useful cmd';
