@@ -74,19 +74,19 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   });
     </pre>
     <p>in html we need to add below code</p>
-<pre>
+<pre class="prettyprint">
 &lt;div *ngIf="form.get('username').touched && form.get('username').invalid" class="alert alert-danger">
           username is required.
 &lt;/div>   
 </pre>
 <p>in above code we want to remove form.get('username') for this we have one approach</p>
-<pre>
+<pre class="prettyprint">
 get username() {
     return this.form.get('username');
 }
 </pre>
 <p>now our html will be look like this</p>
-<pre>
+<pre class="prettyprint">
 &lt;div *ngIf="username.touched && username.invalid" class="alert alert-danger">
           username is required.
 &lt;/div>
