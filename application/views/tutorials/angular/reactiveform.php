@@ -61,7 +61,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
     <p>validator we need to use inside the FormControl so check below image</p>
     <img src="<?php echo base_url();?>assets/images/validatorsImport.png"/>
     <p>if you see above image then FormControl wants that formState as option parameter, formState nothing but predefined value, second parameter is validator function, here validation will go.</p>
-    <pre>
+    <pre class="prettyprint">
 // when validatorFn is have one validation then we need to follow below example
   form = new FormGroup({
     username : new FormControl('', Validators.required),
