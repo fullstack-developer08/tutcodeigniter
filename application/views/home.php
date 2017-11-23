@@ -15,7 +15,7 @@
 
 	</div>
 
-	<div class="card-header">
+	<!--<div class="card-header">
 		Angularjs
 	</div>
 	<div class="card-body">
@@ -25,7 +25,7 @@
 	</div>
 	<div class="card-footer text-muted">
 
-	</div>
+	</div>-->
 
 	<div class="card-header">
 		Angular 4
