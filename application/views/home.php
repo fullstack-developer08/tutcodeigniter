@@ -40,6 +40,12 @@
 		<div class="alert alert-success alert-dismissable fade show">
 			<a href="angular/angular-reactive-form">Angular Reactive Form</a>
 		</div>
+		<div class="alert alert-success alert-dismissable fade show">
+			<a href="angular/angular-fundamentals">Angular Fundamentals</a>
+		</div>
+		<div class="alert alert-success alert-dismissable fade show">
+			<a href="angular/angular-typescript-fundamentals">Typescript Fundamentals</a>
+		</div>
 	</div>
 	<div class="card-footer text-muted">
 
