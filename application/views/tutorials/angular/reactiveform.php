@@ -95,6 +95,35 @@ get username() {
   <hr/>
   <div class="card-body">
     <h4 class="card-title">implementing custom validators</h4>
-   
+    <p>go to angular.io website and search for validatorFn function.</p>
+    
+    <p>If you will see above image than you would found ValidatorFn and AsyncValidatorFn two interface.</p>
+    <p>ValidatorFn function is an interface as it indicated by the I in aboved attached image.</p>
+    
+    <p>If you will check above image than we found that ValidatorFn interface define inside @angular/form.</p>
+    <p>below image shows structure of interface.</p>
+    <img src="<?php echo base_url();?>assets/images/ValidatorFn-structure-of-interface.PNG"/>
+    <p>to make custom validator we need to follow above structure. It means any function that take control as a parameter and type of the control is AbstractControl and return value is ValidationErrors or null.</p>
+    <pre class="prettyprint">
+import { AbstractControl,ValidationErrors } from '@angular/forms';
+
+export class UsernameValidators {
+    static canNotContainSpace (control: AbstractControl) : ValidationErrors | null {
+        if ((control.value as string).indexOf(' ') >= 0) 
+            return { canNotContainSpace: true }
+        return null;
+    }
+}      
+    </pre>
+    <p>In above example we have took any random name for function and just giving control type of AbstractControl and return type is ValidatorErrors or null, then it will be a custom validator function.</p>
+    <img src="<?php echo base_url();?>assets/images/control-value-type-of-any.png"/>
+    <p>If you will see above image control.value is type of any but i want to treat as a string so that used control.value as string</p>
+    <p>just go to again in angular.io website and search for ValidationErrors</p>
+    <img src="<?php echo base_url();?>assets/images/validationErrors-on-angular.PNG"/>
+    <p>In above image ValidationErrors represents the object that has the key and value pairs, key is type of string and value can be anything.</p>
   </div>
+    <div class="card-body">
+        <h4 class="card-title">asynchronous operation</h4>
+        
+    </div>
 </div>

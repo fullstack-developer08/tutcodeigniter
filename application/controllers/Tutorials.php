@@ -100,6 +100,27 @@ class Tutorials extends CI_Controller {
         $this->load->view('tutorials/angular/reactiveform');
 		$this->load->view('footer');
 	}
+	
+	public function typescriptFundamental() {
+		$header['title'] = 'Typescript fundamental';
+		$header['heading'] = 'Typescript fundamental';
+		$header['keywords'] = '';
+		$header['description'] = '';
+		$this->load->view('header', $header);
+        $this->load->view('tutorials/angular/typescriptFundamental');
+		$this->load->view('footer');
+	}
+	
+	public function angularFundamental() {
+		$header['title'] = 'Angular fundamentals';
+		$header['heading'] = 'Angular fundamentals';
+		$header['keywords'] = '';
+		$header['description'] = '';
+		$this->load->view('header', $header);
+        $this->load->view('tutorials/angular/typescriptFundamental');
+		$this->load->view('footer');
+	}
+	
 
 	//Ubuntu/Linux command
 	public function linuxCmd() {

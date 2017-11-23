@@ -65,6 +65,8 @@ $route['angular/angular-redux-with-global-error-concept'] = 'Tutorials/angularRe
 $route['angular/angular-form'] = 'Tutorials/angularForm';
 $route['angular/angular-cli'] = 'Tutorials/angularCli';
 $route['angular/angular-reactive-form'] = 'Tutorials/angularReactiveForm';
+$route['angular/angular-typescript-fundamentals'] = 'Tutorials/typescriptFundamental';
+$route['angular/angular-fundamentals'] = 'Tutorials/angularFundamental';
 
 //Linux
 $route['linux/useful-commands'] = 'Tutorials/linuxCmd';
