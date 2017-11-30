@@ -106,7 +106,7 @@ export class AppComponent {
         Note: *ngIf is the better approach as compair to hidden property binding.
         <br/>
         </div>
-        <img src="src/images/ngIfandhidden.PNG" alt="*ngIf and hidden which one good approach">
+        <img src="/assets/images/ngIfandhidden.PNG" alt="*ngIf and hidden which one good approach">
         <br/><br/><br/>
         <h2 class="blog-post-title">ngSwitchCase Directive with [ngSwitch] property binding</h2>
         <pre class="prettyprint">
@@ -146,7 +146,7 @@ export class AppComponent {
             <li>we can get first object value</li>
             <li>we can get even objects value</li>
             <li>we can get odd objects value</li>
-            <li><img src="assets/images/ngForOf.PNG"/></li>
+            <li><img src="/assets/images/ngForOf.PNG"/></li>
         </ul>
         <p>Example:</p>
         <pre class="prettyprint">
