@@ -120,6 +120,26 @@ class Tutorials extends CI_Controller {
         $this->load->view('tutorials/angular/typescriptFundamental');
 		$this->load->view('footer');
 	}
+
+	public function angularRedux() {
+		$header['title'] = 'Angular Redux';
+		$header['heading'] = 'Angular Redux';
+		$header['keywords'] = '';
+		$header['description'] = '';
+		$this->load->view('header', $header);
+        $this->load->view('tutorials/angular/redux');
+		$this->load->view('footer');
+	}
+
+	public function angularDirective() {
+		$header['title'] = 'Angular Directive';
+		$header['heading'] = 'Angular Directive';
+		$header['keywords'] = '';
+		$header['description'] = '';
+		$this->load->view('header', $header);
+        $this->load->view('tutorials/angular/directive');
+		$this->load->view('footer');
+	}
 	
 
 	//Ubuntu/Linux command

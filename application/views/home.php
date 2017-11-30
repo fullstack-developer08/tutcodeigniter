@@ -46,6 +46,12 @@
 		<div class="alert alert-success alert-dismissable fade show">
 			<a href="angular/angular-typescript-fundamentals">Typescript Fundamentals</a>
 		</div>
+		<div class="alert alert-success alert-dismissable fade show">
+			<a href="angular/angular-redux">Redux</a>
+		</div>
+		<div class="alert alert-success alert-dismissable fade show">
+			<a href="angular/angular-directive">Directive</a>
+		</div>
 	</div>
 	<div class="card-footer text-muted">
 
