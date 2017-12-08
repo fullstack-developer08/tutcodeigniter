@@ -6,8 +6,8 @@
 		<h4 class="card-title">Binding to user Input Events</h4>
         <table>
             <li>To bind to a DOM event, surround the DOM event name in parentheses and assign a quoted template statement to it.</li>
-            <li>The following example shows an event binding that implements a click handler:
-                <button (click)="onClickMe()">Click me!</button>
+            <li>The following example shows an event binding that implements a click handler:<br/>
+                &lt;button (click)="onClickMe()">Click me!&lt;/button>
             </li>
         </table>
         <h4 class="card-title">Get user input from the $event object</h4>
@@ -15,26 +15,25 @@
         <table>
             <li>The properties of an $event object vary depending on the type of DOM event.</li>
             <li>Target property of event object refer to element.
-                <pre>
-template: ` <input (keyup)="onKey($event)"> <p>{{values}}</p> `
+                <pre class="prettyprint">
+template: `&lt;input (keyup)="onKey($event)"> &lt;p>{{values}}&lt;/p>`
 	
-	export class KeyUpComponent_v1 {
+export class KeyUpComponent_v1 {
   		values = '';
 		onKey(event: any) { // without type info
     			this.values += event.target.value + ' | ';
  	 	}
 }
-
                 </pre>
             </li>
         </table>
         <h4 class="card-title">Type the $event</h4>
         <li>The previous example was casts the $event as an any type.
-            <pre>
+            <pre class="prettyprint">
 export class KeyUpComponent_v1 {
   values = '';
   onKey(event: KeyboardEvent) { // with type info
-    this.values += (<HTMLInputElement>event.target).value + ' | ';
+    this.values += (&lt;HTMLInputElement>event.target).value + ' | ';
   }
 }
             </pre>
