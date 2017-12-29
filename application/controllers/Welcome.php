@@ -39,7 +39,7 @@ class Welcome extends CI_Controller {
 	{
 		
 		
-		$this->load->view('tutorials/angular-exp/basic-angular-app1/index.html');
+		$this->load->view('tutorials/angular-exp/basic-angular-app1/index');
 		
 	}
 }
