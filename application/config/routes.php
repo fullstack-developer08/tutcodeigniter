@@ -69,7 +69,6 @@ $route['angular/angular-typescript-fundamentals'] = 'Tutorials/typescriptFundame
 $route['angular/angular-fundamentals'] = 'Tutorials/angularFundamental';
 $route['angular/angular-redux'] = 'Tutorials/angularRedux';
 $route['angular/angular-directive'] = 'Tutorials/angularDirective';
-$route['basic_angular_app1'] = 'Welcome/basic_angular_app1';
 
 
 //Linux

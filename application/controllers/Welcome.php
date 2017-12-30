@@ -34,12 +34,4 @@ class Welcome extends CI_Controller {
 		$this->load->view('home');
 		$this->load->view('footer');
 	}
-	
-	public function basic_angular_app1()
-	{
-		
-		
-		$this->load->view('tutorials/angular-exp/basic-todo-app1/index');
-		
-	}
 }
