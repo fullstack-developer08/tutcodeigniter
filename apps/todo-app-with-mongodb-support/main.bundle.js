@@ -56,7 +56,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar is-success\">\r\n    <div class=\"navbar-brand\">\r\n        <a class=\"navbar-item\" href=\"#\">\r\n       way2programming\r\n    </a>\r\n        <div class=\"navbar-burger burger\" data-target=\"navMenuColorsuccess-example\">\r\n            <span></span>\r\n            <span></span>\r\n            <span></span>\r\n        </div>\r\n    </div>\r\n    <div id=\"navMenuColorsuccess-example\" class=\"navbar-menu\">\r\n    </div>\r\n</nav>\r\n<br/>\r\n<app-navbar></app-navbar>\r\n<div class=\"container\">\r\n    <app-todo-dashboard></app-todo-dashboard>\r\n    <br/>\r\n    <app-todo-list></app-todo-list>\r\n</div>"
+module.exports = "<app-navbar></app-navbar>\r\n<div class=\"container\">\r\n    <app-todo-dashboard></app-todo-dashboard>\r\n    <br/>\r\n    <app-todo-list></app-todo-list>\r\n</div>"
 
 /***/ }),
 
@@ -98,18 +98,17 @@ var AppComponent = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_redux_store__ = __webpack_require__("../../../../@angular-redux/store/lib/src/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_redux_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__angular_redux_store__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__todo_dashboard_todo_dashboard_component__ = __webpack_require__("../../../../../src/app/todo-dashboard/todo-dashboard.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__todo_list_todo_list_component__ = __webpack_require__("../../../../../src/app/todo-list/todo-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__store__ = __webpack_require__("../../../../../src/app/store.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__test1_test1_component__ = __webpack_require__("../../../../../src/app/test1/test1.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__todo_service__ = __webpack_require__("../../../../../src/app/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_redux_store__ = __webpack_require__("../../../../@angular-redux/store/lib/src/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_redux_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__angular_redux_store__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__todo_dashboard_todo_dashboard_component__ = __webpack_require__("../../../../../src/app/todo-dashboard/todo-dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__todo_list_todo_list_component__ = __webpack_require__("../../../../../src/app/todo-list/todo-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__store__ = __webpack_require__("../../../../../src/app/store.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__test1_test1_component__ = __webpack_require__("../../../../../src/app/test1/test1.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__todo_service__ = __webpack_require__("../../../../../src/app/todo.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -131,28 +130,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-var routes = [];
 var AppModule = (function () {
     function AppModule(ngRedux) {
-        ngRedux.configureStore(__WEBPACK_IMPORTED_MODULE_9__store__["b" /* rootReducer */], __WEBPACK_IMPORTED_MODULE_9__store__["a" /* INITIAL_STATE */]);
+        ngRedux.configureStore(__WEBPACK_IMPORTED_MODULE_8__store__["b" /* rootReducer */], __WEBPACK_IMPORTED_MODULE_8__store__["a" /* INITIAL_STATE */]);
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__todo_dashboard_todo_dashboard_component__["a" /* TodoDashboardComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__todo_list_todo_list_component__["a" /* TodoListComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__test1_test1_component__["a" /* Test1Component */],
-                __WEBPACK_IMPORTED_MODULE_12__navbar_navbar_component__["a" /* NavbarComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__todo_dashboard_todo_dashboard_component__["a" /* TodoDashboardComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__todo_list_todo_list_component__["a" /* TodoListComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__test1_test1_component__["a" /* Test1Component */],
+                __WEBPACK_IMPORTED_MODULE_11__navbar_navbar_component__["a" /* NavbarComponent */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_4__angular_redux_store__["NgReduxModule"], __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(routes)
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_3__angular_redux_store__["NgReduxModule"], __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["b" /* HttpClientModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_11__todo_service__["a" /* TodoService */]],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_10__todo_service__["a" /* TodoService */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__angular_redux_store__["NgRedux"]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_redux_store__["NgRedux"]])
     ], AppModule);
     return AppModule;
 }());
@@ -182,7 +179,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar is-success\">\n  <div class=\"navbar-brand\">\n    <a class=\"navbar-item\" href=\"#\">\n       way2programming\n    </a>\n    <router-outlet></router-outlet>\n    <div class=\"navbar-burger burger\" data-target=\"navMenuColorsuccess-example\">\n      <span></span>\n      <span></span>\n      <span></span>\n    </div>\n  </div>\n  <div id=\"navMenuColorsuccess-example\" class=\"navbar-menu\">\n  </div>\n</nav>\n<br/>"
+module.exports = "<nav class=\"navbar is-success\">\n  <div class=\"navbar-brand\">\n    <a class=\"navbar-item\" href=\"#\">\n       way2programming\n    </a>\n    <div class=\"navbar-burger burger\" data-target=\"navMenuColorsuccess-example\">\n      <span></span>\n      <span></span>\n      <span></span>\n    </div>\n  </div>\n  <div id=\"navMenuColorsuccess-example\" class=\"navbar-menu\">\n  </div>\n</nav>\n<br/>"
 
 /***/ }),
 
@@ -239,6 +236,7 @@ var INITIAL_STATE = {
 function rootReducer(state, action) {
     switch (action.type) {
         case __WEBPACK_IMPORTED_MODULE_0__actions__["a" /* ADD_TODO */]: {
+            __WEBPACK_IMPORTED_MODULE_1_lodash__["reverse"](state.todos);
             return Object.assign({}, state, { todos: __WEBPACK_IMPORTED_MODULE_1_lodash__["reverse"](state.todos.concat(Object.assign({}, action.todo))) });
         }
         case __WEBPACK_IMPORTED_MODULE_0__actions__["d" /* REMOVE_TODO */]: {
@@ -257,7 +255,7 @@ function rootReducer(state, action) {
             });
         }
         case __WEBPACK_IMPORTED_MODULE_0__actions__["c" /* FETCH_TODO_SUCCESS */]: {
-            return Object.assign({}, state, { todos: action.todos });
+            return Object.assign({}, state, { todos: __WEBPACK_IMPORTED_MODULE_1_lodash__["reverse"](action.todos) });
         }
     }
     return state;
@@ -495,7 +493,6 @@ var TodoListComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_redux_store__ = __webpack_require__("../../../../@angular-redux/store/lib/src/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_redux_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__angular_redux_store__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -508,12 +505,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var TodoService = (function () {
-    function TodoService(_http, ngRedux, _router) {
+    function TodoService(_http, ngRedux) {
         this._http = _http;
         this.ngRedux = ngRedux;
-        this._router = _router;
         this.URL = 'https://sleepy-citadel-54178.herokuapp.com/api/';
     }
     TodoService.prototype.addTodo = function (todo) {
@@ -523,7 +518,6 @@ var TodoService = (function () {
     TodoService.prototype.getTodos = function () {
         var _this = this;
         this._http.get(this.URL + '/todos').subscribe(function (todos) {
-            console.log(todos);
             _this.ngRedux.dispatch({ type: 'FETCH_TODO_SUCCESS', todos: todos });
         });
     };
@@ -537,7 +531,7 @@ var TodoService = (function () {
     };
     TodoService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__angular_redux_store__["NgRedux"], __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__angular_redux_store__["NgRedux"]])
     ], TodoService);
     return TodoService;
 }());
