@@ -239,7 +239,7 @@ var INITIAL_STATE = {
 function rootReducer(state, action) {
     switch (action.type) {
         case __WEBPACK_IMPORTED_MODULE_0__actions__["a" /* ADD_TODO */]: {
-            return Object.assign({}, state, { todos: state.todos.concat(Object.assign({}, action.todo)) });
+            return Object.assign({}, state, { todos: __WEBPACK_IMPORTED_MODULE_1_lodash__["reverse"](state.todos.concat(Object.assign({}, action.todo))) });
         }
         case __WEBPACK_IMPORTED_MODULE_0__actions__["d" /* REMOVE_TODO */]: {
             return Object.assign({}, state, { todos: __WEBPACK_IMPORTED_MODULE_1_lodash__["filter"](state.todos, function (todo) { return todo._id !== action.todoId; }) });
@@ -556,7 +556,7 @@ var TodoService = (function () {
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
-    production: false
+    production: true
 };
 
 
