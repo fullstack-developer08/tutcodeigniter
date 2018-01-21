@@ -742,7 +742,7 @@ var TodoService = (function () {
     function TodoService(_http, ngRedux) {
         this._http = _http;
         this.ngRedux = ngRedux;
-        this.URL = 'http://localhost:4000/api';
+        this.URL = 'https://sleepy-citadel-54178.herokuapp.com/api';
     }
     TodoService.prototype.addTodo = function (todo) {
         var _this = this;
