@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\r\n<div class=\"container\">\r\n    <app-global-modal></app-global-modal>\r\n    <app-global-messages></app-global-messages>\r\n    <br/>\r\n    <app-todo-dashboard></app-todo-dashboard>\r\n    <br/>\r\n    <app-todo-list></app-todo-list>\r\n</div>"
+module.exports = "<app-navbar></app-navbar>\r\n<div class=\"container\">\r\n    <app-common-modal></app-common-modal>\r\n    <app-common-messages></app-common-messages>\r\n    <br/>\r\n    <app-todo-dashboard></app-todo-dashboard>\r\n    <br/>\r\n    <app-todo-list></app-todo-list>\r\n</div>"
 
 /***/ }),
 
@@ -55,12 +55,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var AppComponent = (function () {
+var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'app';
     }
     AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'app-root',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -77,21 +76,24 @@ var AppComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* unused harmony export instrumentOptions */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_redux_store__ = __webpack_require__("../../../../@angular-redux/store/lib/src/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_redux_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__angular_redux_store__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__todo_todo_dashboard_todo_dashboard_component__ = __webpack_require__("../../../../../src/app/todo/todo-dashboard/todo-dashboard.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__todo_todo_list_todo_list_component__ = __webpack_require__("../../../../../src/app/todo/todo-list/todo-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__global_messages_global_messages_component__ = __webpack_require__("../../../../../src/app/global-messages/global-messages.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__global_modal_global_modal_component__ = __webpack_require__("../../../../../src/app/global-modal/global-modal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__store__ = __webpack_require__("../../../../../src/app/store.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__todo_todo_service__ = __webpack_require__("../../../../../src/app/todo/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__todo__ = __webpack_require__("../../../../../src/app/todo/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_messages__ = __webpack_require__("../../../../../src/app/common-messages/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_modal__ = __webpack_require__("../../../../../src/app/common-modal/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navbar__ = __webpack_require__("../../../../../src/app/navbar/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ngrx_core_compose__ = __webpack_require__("../../../../@ngrx/core/compose.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ngrx_core_compose___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__ngrx_core_compose__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ngrx_store_devtools__ = __webpack_require__("../../../../@ngrx/store-devtools/@ngrx/store-devtools.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ngrx_store_log_monitor__ = __webpack_require__("../../../../@ngrx/store-log-monitor/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ngrx_store_localstorage__ = __webpack_require__("../../../../ngrx-store-localstorage/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ngrx_store_localstorage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_ngrx_store_localstorage__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -103,10 +105,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 // import { RouterModule, Routes } from '@angular/router';
-
-
-
 // import { Reducer } from 'redux';
 // import { createLogger } from 'redux-logger';
 
@@ -117,32 +118,55 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AppModule = (function () {
-    function AppModule(ngRedux, devTools) {
-        this.ngRedux = ngRedux;
-        var enhancers = Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["isDevMode"])() ? [devTools.enhancer()] : [];
-        ngRedux.configureStore(__WEBPACK_IMPORTED_MODULE_10__store__["b" /* combinedReducer */], __WEBPACK_IMPORTED_MODULE_10__store__["a" /* INITIAL_STATE */], [], enhancers);
+
+
+
+
+
+
+
+function instrumentOptions() {
+    return {
+        monitor: Object(__WEBPACK_IMPORTED_MODULE_12__ngrx_store_log_monitor__["b" /* useLogMonitor */])({ visible: false, position: 'right' })
+    };
+}
+var reducers = {
+    todos: __WEBPACK_IMPORTED_MODULE_5__todo__["d" /* todoReducer */],
+    commonModal: __WEBPACK_IMPORTED_MODULE_7__common_modal__["b" /* commonModalReducer */],
+    commonMessage: __WEBPACK_IMPORTED_MODULE_6__common_messages__["e" /* commonMessageReducer */]
+};
+var appReducer = Object(__WEBPACK_IMPORTED_MODULE_10__ngrx_core_compose__["compose"])(Object(__WEBPACK_IMPORTED_MODULE_13_ngrx_store_localstorage__["localStorageSync"])({ keys: ['todos', 'commonModal', 'commonMessage'], rehydrate: true }), __WEBPACK_IMPORTED_MODULE_9__ngrx_store__["k" /* combineReducers */])(reducers);
+var AppModule = /** @class */ (function () {
+    function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__todo_todo_dashboard_todo_dashboard_component__["a" /* TodoDashboardComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__todo_todo_list_todo_list_component__["a" /* TodoListComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__navbar_navbar_component__["a" /* NavbarComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__global_messages_global_messages_component__["a" /* GlobalMessagesComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__global_modal_global_modal_component__["a" /* GlobalModalComponent */]
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__todo__["a" /* TodoDashboardComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__todo__["b" /* TodoListComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__navbar__["a" /* NavbarComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__common_messages__["a" /* CommonMessagesComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__common_modal__["a" /* CommonModalComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormsModule"],
-                __WEBPACK_IMPORTED_MODULE_3__angular_redux_store__["NgReduxModule"],
-                __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["b" /* HttpClientModule */]
+                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_9__ngrx_store__["i" /* StoreModule */].forRoot({
+                    todos: __WEBPACK_IMPORTED_MODULE_5__todo__["d" /* todoReducer */],
+                    commonModal: __WEBPACK_IMPORTED_MODULE_7__common_modal__["b" /* commonModalReducer */],
+                    commonMessage: __WEBPACK_IMPORTED_MODULE_6__common_messages__["e" /* commonMessageReducer */]
+                }),
+                __WEBPACK_IMPORTED_MODULE_11__ngrx_store_devtools__["b" /* StoreDevtoolsModule */].instrument(instrumentOptions),
+                __WEBPACK_IMPORTED_MODULE_12__ngrx_store_log_monitor__["a" /* StoreLogMonitorModule */],
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_11__todo_todo_service__["a" /* TodoService */]],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_5__todo__["c" /* TodoService */]
+            ],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_redux_store__["NgRedux"], __WEBPACK_IMPORTED_MODULE_3__angular_redux_store__["DevToolsExtension"]])
+        __metadata("design:paramtypes", [])
     ], AppModule);
     return AppModule;
 }());
@@ -151,7 +175,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/global-messages/actions.ts":
+/***/ "../../../../../src/app/common-messages/actions.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -165,7 +189,7 @@ var REMOVE_MESSAGE = 'REMOVE_MESSAGE';
 
 /***/ }),
 
-/***/ "../../../../../src/app/global-messages/global-messages.component.css":
+/***/ "../../../../../src/app/common-messages/common-messages.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -183,21 +207,19 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ "../../../../../src/app/global-messages/global-messages.component.html":
+/***/ "../../../../../src/app/common-messages/common-messages.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngFor=\"let message of globalMessages | async\">\r\n  <article class=\"message is-success\" *ngIf=\"message.success\">\r\n    <div class=\"message-body\">\r\n      {{message.success}}\r\n    </div>\r\n  </article>\r\n  <article class=\"message is-info\" *ngIf=\"message.info\">\r\n    <div class=\"message-body\">\r\n      {{message.info}}\r\n    </div>\r\n  </article>\r\n</div>\r\n"
+module.exports = "<div *ngFor=\"let message of commonMessages | async\">\r\n  <article class=\"message is-success\" *ngIf=\"message.success\">\r\n    <div class=\"message-body\">\r\n      {{message.success}}\r\n    </div>\r\n  </article>\r\n  <article class=\"message is-info\" *ngIf=\"message.info\">\r\n    <div class=\"message-body\">\r\n      {{message.info}}\r\n    </div>\r\n  </article>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ "../../../../../src/app/global-messages/global-messages.component.ts":
+/***/ "../../../../../src/app/common-messages/common-messages.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlobalMessagesComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommonMessagesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_redux_store__ = __webpack_require__("../../../../@angular-redux/store/lib/src/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_redux_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__angular_redux_store__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -208,54 +230,67 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
-var GlobalMessagesComponent = (function () {
-    function GlobalMessagesComponent(ngRedux) {
-        this.ngRedux = ngRedux;
+var CommonMessagesComponent = /** @class */ (function () {
+    function CommonMessagesComponent() {
     }
-    GlobalMessagesComponent.prototype.ngOnInit = function () {
+    CommonMessagesComponent.prototype.ngOnInit = function () {
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_redux_store__["select"])(function (s) { return s.globalMessaging.globalMessages; }),
-        __metadata("design:type", Object)
-    ], GlobalMessagesComponent.prototype, "globalMessages", void 0);
-    GlobalMessagesComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-global-messages',
-            template: __webpack_require__("../../../../../src/app/global-messages/global-messages.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/global-messages/global-messages.component.css")]
+    CommonMessagesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-common-messages',
+            template: __webpack_require__("../../../../../src/app/common-messages/common-messages.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/common-messages/common-messages.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_redux_store__["NgRedux"]])
-    ], GlobalMessagesComponent);
-    return GlobalMessagesComponent;
+        __metadata("design:paramtypes", [])
+    ], CommonMessagesComponent);
+    return CommonMessagesComponent;
 }());
 
 
 
 /***/ }),
 
-/***/ "../../../../../src/app/global-messages/store.ts":
+/***/ "../../../../../src/app/common-messages/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GLOBAL_MESSAGE_INITIAL_STATE; });
-/* harmony export (immutable) */ __webpack_exports__["b"] = globalMessageReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions__ = __webpack_require__("../../../../../src/app/global-messages/actions.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_messages_component__ = __webpack_require__("../../../../../src/app/common-messages/common-messages.component.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__common_messages_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__store__ = __webpack_require__("../../../../../src/app/common-messages/store.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__store__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions__ = __webpack_require__("../../../../../src/app/common-messages/actions.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__actions__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__actions__["b"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__actions__["c"]; });
 
-var GLOBAL_MESSAGE_INITIAL_STATE = {
-    globalMessages: []
+
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/common-messages/store.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export MESSAGE_INITIAL_STATE */
+/* harmony export (immutable) */ __webpack_exports__["a"] = commonMessageReducer;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions__ = __webpack_require__("../../../../../src/app/common-messages/actions.ts");
+
+var MESSAGE_INITIAL_STATE = {
+    commonMessages: []
 };
 function showSuccessMessage(state, action) {
-    return Object.assign({}, state, { globalMessages: state.globalMessages.concat(action.payload) });
+    return Object.assign({}, state, { commonMessages: state.commonMessages.concat(action.payload) });
 }
 function showInfoMessage(state, action) {
-    return Object.assign({}, state, { globalMessages: state.globalMessages.concat(action.payload) });
+    return Object.assign({}, state, { commonMessages: state.commonMessages.concat(action.payload) });
 }
 function clearMessage(state, action) {
-    return Object.assign({}, state, { globalMessages: [] });
+    return Object.assign({}, state, { commonMessages: [] });
 }
-function globalMessageReducer(state, action) {
-    if (state === void 0) { state = GLOBAL_MESSAGE_INITIAL_STATE; }
+function commonMessageReducer(state, action) {
+    if (state === void 0) { state = MESSAGE_INITIAL_STATE; }
     switch (action.type) {
         case __WEBPACK_IMPORTED_MODULE_0__actions__["c" /* SUCCESS_MESSAGE */]: return showSuccessMessage(state, action);
         case __WEBPACK_IMPORTED_MODULE_0__actions__["b" /* REMOVE_MESSAGE */]: return clearMessage(state, action);
@@ -267,19 +302,19 @@ function globalMessageReducer(state, action) {
 
 /***/ }),
 
-/***/ "../../../../../src/app/global-modal/actions.ts":
+/***/ "../../../../../src/app/common-modal/actions.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return WARNING; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DISABLE_MODAL; });
-var WARNING = 'WARNING';
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CONFIRM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return DISABLE_MODAL; });
+var CONFIRM = 'CONFIRM';
 var DISABLE_MODAL = 'DISABLE_MODAL';
 
 
 /***/ }),
 
-/***/ "../../../../../src/app/global-modal/global-modal.component.css":
+/***/ "../../../../../src/app/common-modal/common-modal.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -297,23 +332,22 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ "../../../../../src/app/global-modal/global-modal.component.html":
+/***/ "../../../../../src/app/common-modal/common-modal.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- alert modal -->\r\n<div class=\"modal\" [class.is-active]=\"(modalObject | async).warning\" *ngIf=\"(modalObject | async).warning\">\r\n    <div class=\"modal-background\"></div>\r\n    <div class=\"modal-card\">\r\n        <input type=\"hidden\" #id [value]=\"(modalObject | async).id\"/>\r\n        <header class=\"modal-card-head\">\r\n            <p class=\"modal-card-title\">{{(modalObject | async).heading}}</p>\r\n            <button class=\"delete\" aria-label=\"close\" (click)=\"disableModal()\"></button>\r\n        </header>\r\n        <section class=\"modal-card-body\">\r\n            {{(modalObject | async).message}}\r\n        </section>\r\n        <footer class=\"modal-card-foot\">\r\n            <button class=\"button is-danger\" (click)=\"removeTodo(id.value)\">REMOVE TODO</button>\r\n            <button class=\"button\" (click)=\"disableModal()\">Cancel</button>\r\n        </footer>\r\n    </div>\r\n</div>\r\n\r\n\r\n<!-- info modal -->\r\n<!-- <div class=\"modal\">\r\n    <div class=\"modal-background\"></div>\r\n    <div class=\"modal-card\">\r\n        <header class=\"modal-card-head\">\r\n            <p class=\"modal-card-title\">Modal title</p>\r\n            <button class=\"delete\" aria-label=\"close\"></button>\r\n        </header>\r\n        <section class=\"modal-card-body\">\r\n            Content \r\n        </section>\r\n        <footer class=\"modal-card-foot\">\r\n            <button class=\"button is-success\">Save changes</button>\r\n            <button class=\"button\">Cancel</button>\r\n        </footer>\r\n    </div>\r\n</div> -->"
+module.exports = "<!-- Confirm Modal -->\r\n<div class=\"modal\" [class.is-active]=\"modalObject.modalObject.messageType === 'confirm'\" *ngIf=\"modalObject.modalObject.messageType\">\r\n        <div class=\"modal-background\"></div>\r\n        <div class=\"modal-card\">\r\n            <input type=\"hidden\" #id [value]=\"modalObject.modalObject.removeTodoId\"/>\r\n            <header class=\"modal-card-head\">\r\n                <p class=\"modal-card-title\">{{modalObject.modalObject.heading}}</p>\r\n                <button class=\"delete\" aria-label=\"close\" (click)=\"disableModal()\"></button>\r\n            </header>\r\n            <section class=\"modal-card-body\">\r\n                {{modalObject.modalObject.message}}\r\n            </section>\r\n            <footer class=\"modal-card-foot\">\r\n                <button class=\"button is-danger\" (click)=\"removeTodo(id.value)\">REMOVE TODO</button>\r\n                <button class=\"button\" (click)=\"disableModal()\">Cancel</button>\r\n            </footer>\r\n        </div>\r\n    </div>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/global-modal/global-modal.component.ts":
+/***/ "../../../../../src/app/common-modal/common-modal.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlobalModalComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommonModalComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_redux_store__ = __webpack_require__("../../../../@angular-redux/store/lib/src/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_redux_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__angular_redux_store__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__todo_todo_service__ = __webpack_require__("../../../../../src/app/todo/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__actions__ = __webpack_require__("../../../../../src/app/global-modal/actions.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__todo__ = __webpack_require__("../../../../../src/app/todo/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__actions__ = __webpack_require__("../../../../../src/app/common-modal/actions.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -327,67 +361,94 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var GlobalModalComponent = (function () {
-    function GlobalModalComponent(_todoService, ngRedux) {
+var CommonModalComponent = /** @class */ (function () {
+    function CommonModalComponent(store, _todoService) {
+        this.store = store;
         this._todoService = _todoService;
-        this.ngRedux = ngRedux;
-        this.data = {
-            enableModal: true
-        };
     }
-    GlobalModalComponent.prototype.ngOnInit = function () {
+    CommonModalComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.store.select('commonModal').subscribe(function (object) {
+            _this.modalObject = object;
+            console.log(_this.modalObject);
+        });
     };
-    GlobalModalComponent.prototype.removeTodo = function (id) {
+    CommonModalComponent.prototype.removeTodo = function (id) {
         this._todoService.removeTodo(id);
-        this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__actions__["a" /* DISABLE_MODAL */], payload: {} });
+        this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__actions__["b" /* DISABLE_MODAL */], payload: {} });
     };
-    GlobalModalComponent.prototype.disableModal = function () {
-        this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__actions__["a" /* DISABLE_MODAL */], payload: {} });
+    CommonModalComponent.prototype.disableModal = function () {
+        this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__actions__["b" /* DISABLE_MODAL */], payload: {} });
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_redux_store__["select"])(function (s) { return s.globalModling.modalObject; }),
-        __metadata("design:type", Object)
-    ], GlobalModalComponent.prototype, "modalObject", void 0);
-    GlobalModalComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-global-modal',
-            template: __webpack_require__("../../../../../src/app/global-modal/global-modal.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/global-modal/global-modal.component.css")]
+    CommonModalComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-common-modal',
+            template: __webpack_require__("../../../../../src/app/common-modal/common-modal.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/common-modal/common-modal.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__todo_todo_service__["a" /* TodoService */], __WEBPACK_IMPORTED_MODULE_1__angular_redux_store__["NgRedux"]])
-    ], GlobalModalComponent);
-    return GlobalModalComponent;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ngrx_store__["h" /* Store */], __WEBPACK_IMPORTED_MODULE_2__todo__["c" /* TodoService */]])
+    ], CommonModalComponent);
+    return CommonModalComponent;
 }());
 
 
 
 /***/ }),
 
-/***/ "../../../../../src/app/global-modal/store.ts":
+/***/ "../../../../../src/app/common-modal/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MODAL_INITIAL_STATE; });
-/* harmony export (immutable) */ __webpack_exports__["b"] = globalModalReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions__ = __webpack_require__("../../../../../src/app/global-modal/actions.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_modal_component__ = __webpack_require__("../../../../../src/app/common-modal/common-modal.component.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__common_modal_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__store__ = __webpack_require__("../../../../../src/app/common-modal/store.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__store__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions__ = __webpack_require__("../../../../../src/app/common-modal/actions.ts");
+/* unused harmony namespace reexport */
+
+
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/common-modal/store.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export MODAL_INITIAL_STATE */
+/* harmony export (immutable) */ __webpack_exports__["a"] = commonModalReducer;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions__ = __webpack_require__("../../../../../src/app/common-modal/actions.ts");
 
 var MODAL_INITIAL_STATE = {
     modalObject: {}
 };
-function warningModal(state, action) {
+function confirmModal(state, action) {
+    console.log('confirm');
     return Object.assign({}, state, { modalObject: action.payload });
 }
 function disableModal(state, action) {
     return Object.assign({}, state, { modalObject: action.payload });
 }
-function globalModalReducer(state, action) {
+function commonModalReducer(state, action) {
     if (state === void 0) { state = MODAL_INITIAL_STATE; }
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions__["b" /* WARNING */]: return warningModal(state, action);
-        case __WEBPACK_IMPORTED_MODULE_0__actions__["a" /* DISABLE_MODAL */]: return disableModal(state, action);
+        case __WEBPACK_IMPORTED_MODULE_0__actions__["a" /* CONFIRM */]: return confirmModal(state, action);
+        case __WEBPACK_IMPORTED_MODULE_0__actions__["b" /* DISABLE_MODAL */]: return disableModal(state, action);
     }
     return state;
 }
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/navbar/index.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__navbar_component__["a"]; });
+
 
 
 /***/ }),
@@ -433,13 +494,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var NavbarComponent = (function () {
+var NavbarComponent = /** @class */ (function () {
     function NavbarComponent() {
     }
     NavbarComponent.prototype.ngOnInit = function () {
     };
     NavbarComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'app-navbar',
             template: __webpack_require__("../../../../../src/app/navbar/navbar.component.html"),
             styles: [__webpack_require__("../../../../../src/app/navbar/navbar.component.css")]
@@ -449,37 +510,6 @@ var NavbarComponent = (function () {
     return NavbarComponent;
 }());
 
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/store.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return INITIAL_STATE; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return combinedReducer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__("../../../../redux/es/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__todo_store__ = __webpack_require__("../../../../../src/app/todo/store.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__global_modal_store__ = __webpack_require__("../../../../../src/app/global-modal/store.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_redux_form__ = __webpack_require__("../../../../@angular-redux/form/dist/source/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_redux_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__angular_redux_form__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__global_messages_store__ = __webpack_require__("../../../../../src/app/global-messages/store.ts");
-
-
-
-
-
-var INITIAL_STATE = {
-    todoing: __WEBPACK_IMPORTED_MODULE_1__todo_store__["a" /* TODO_INITIAL_STATE */],
-    globalMessaging: __WEBPACK_IMPORTED_MODULE_4__global_messages_store__["a" /* GLOBAL_MESSAGE_INITIAL_STATE */],
-    globalModling: __WEBPACK_IMPORTED_MODULE_2__global_modal_store__["a" /* MODAL_INITIAL_STATE */]
-};
-var combinedReducer = Object(__WEBPACK_IMPORTED_MODULE_3__angular_redux_form__["composeReducers"])(Object(__WEBPACK_IMPORTED_MODULE_0_redux__["combineReducers"])({
-    globalMessaging: __WEBPACK_IMPORTED_MODULE_4__global_messages_store__["b" /* globalMessageReducer */],
-    todoing: __WEBPACK_IMPORTED_MODULE_1__todo_store__["b" /* todoReducer */],
-    globalModling: __WEBPACK_IMPORTED_MODULE_2__global_modal_store__["b" /* globalModalReducer */]
-}), Object(__WEBPACK_IMPORTED_MODULE_3__angular_redux_form__["defaultFormReducer"])());
 
 
 /***/ }),
@@ -500,29 +530,53 @@ var FETCH_TODO_SUCCESS = 'FETCH_TODO_SUCCESS';
 
 /***/ }),
 
+/***/ "../../../../../src/app/todo/index.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__todo_dashboard_todo_dashboard_component__ = __webpack_require__("../../../../../src/app/todo/todo-dashboard/todo-dashboard.component.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__todo_dashboard_todo_dashboard_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__todo_list_todo_list_component__ = __webpack_require__("../../../../../src/app/todo/todo-list/todo-list.component.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__todo_list_todo_list_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__todo_service__ = __webpack_require__("../../../../../src/app/todo/todo.service.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__todo_service__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store__ = __webpack_require__("../../../../../src/app/todo/store.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__store__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__actions__ = __webpack_require__("../../../../../src/app/todo/actions.ts");
+/* unused harmony namespace reexport */
+
+
+
+
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/todo/store.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TODO_INITIAL_STATE; });
-/* harmony export (immutable) */ __webpack_exports__["b"] = todoReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions__ = __webpack_require__("../../../../../src/app/todo/actions.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash__ = __webpack_require__("../../../../lodash/lodash.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash__);
+/* unused harmony export TODO_INITIAL_STATE */
+/* harmony export (immutable) */ __webpack_exports__["a"] = todoReducer;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__("../../../../lodash/lodash.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions__ = __webpack_require__("../../../../../src/app/todo/actions.ts");
 
 
 var TODO_INITIAL_STATE = {
     todos: []
 };
 function addTodo(state, action) {
-    __WEBPACK_IMPORTED_MODULE_1_lodash__["reverse"](state.todos);
+    console.log(action);
+    __WEBPACK_IMPORTED_MODULE_0_lodash__["reverse"](state.todos);
     return Object.assign({}, state, {
-        todos: __WEBPACK_IMPORTED_MODULE_1_lodash__["reverse"](state.todos.concat(Object.assign({}, action.todo)))
+        todos: __WEBPACK_IMPORTED_MODULE_0_lodash__["reverse"](state.todos.concat(Object.assign({}, action.todo)))
     });
 }
 function removeTodo(state, action) {
     return Object.assign({}, state, {
-        todos: __WEBPACK_IMPORTED_MODULE_1_lodash__["filter"](state.todos, function (todo) { return todo._id !== action.todoId; })
+        todos: __WEBPACK_IMPORTED_MODULE_0_lodash__["filter"](state.todos, function (todo) { return todo._id !== action.todoId; })
     });
 }
 function toggleTodo(state, action) {
@@ -536,16 +590,16 @@ function toggleTodo(state, action) {
 }
 function fetchTodoSuccess(state, action) {
     return Object.assign({}, state, {
-        todos: __WEBPACK_IMPORTED_MODULE_1_lodash__["reverse"](action.todos)
+        todos: __WEBPACK_IMPORTED_MODULE_0_lodash__["reverse"](action.todos)
     });
 }
 function todoReducer(state, action) {
     if (state === void 0) { state = TODO_INITIAL_STATE; }
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions__["a" /* ADD_TODO */]: return addTodo(state, action);
-        case __WEBPACK_IMPORTED_MODULE_0__actions__["c" /* REMOVE_TODO */]: return removeTodo(state, action);
-        case __WEBPACK_IMPORTED_MODULE_0__actions__["d" /* TOOGLE_TODO */]: return toggleTodo(state, action);
-        case __WEBPACK_IMPORTED_MODULE_0__actions__["b" /* FETCH_TODO_SUCCESS */]: return fetchTodoSuccess(state, action);
+        case __WEBPACK_IMPORTED_MODULE_1__actions__["a" /* ADD_TODO */]: return addTodo(state, action);
+        case __WEBPACK_IMPORTED_MODULE_1__actions__["c" /* REMOVE_TODO */]: return removeTodo(state, action);
+        case __WEBPACK_IMPORTED_MODULE_1__actions__["d" /* TOOGLE_TODO */]: return toggleTodo(state, action);
+        case __WEBPACK_IMPORTED_MODULE_1__actions__["b" /* FETCH_TODO_SUCCESS */]: return fetchTodoSuccess(state, action);
     }
     return state;
 }
@@ -596,7 +650,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var TodoDashboardComponent = (function () {
+var TodoDashboardComponent = /** @class */ (function () {
     function TodoDashboardComponent(_todoService) {
         this._todoService = _todoService;
     }
@@ -610,7 +664,7 @@ var TodoDashboardComponent = (function () {
         }
     };
     TodoDashboardComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'app-todo-dashboard',
             template: __webpack_require__("../../../../../src/app/todo/todo-dashboard/todo-dashboard.component.html"),
             styles: [__webpack_require__("../../../../../src/app/todo/todo-dashboard/todo-dashboard.component.css")]
@@ -645,7 +699,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/todo/todo-list/todo-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<table class=\"table is-bordered is-striped is-narrow is-hoverable is-fullwidth is-success\" *ngIf=\"(todos | async).length > 0\">\r\n  <thead>\r\n    <tr>\r\n      <th>Description</th>\r\n      <th>Priority</th>\r\n      <th>Last Updated</th>\r\n      <th>Remove</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr *ngFor=\"let todo of todos | async\">\r\n      <td class=\"cursor-pointer\" [class.line-through]=\"todo.isCompleted\" (click)=\"toogleTodo(todo._id, todo.isCompleted)\">{{todo.desc}}</td>\r\n      <td class=\"cursor-pointer\" [class.line-through]=\"todo.isCompleted\" (click)=\"toogleTodo(todo._id, todo.isCompleted)\">{{todo.priority}}</td>\r\n      <td class=\"cursor-pointer\" [class.line-through]=\"todo.isCompleted\" (click)=\"toogleTodo(todo._id, todo.isCompleted)\">{{todo.lastUpdated | date: 'dd/MM/yyyy'}}</td>\r\n      <td><button class=\"button is-outlined is-danger\" (click)=\"removeTodo(todo._id)\">REMOVE TODO</button></td>\r\n    </tr>\r\n  </tbody>\r\n</table>"
+module.exports = "<table class=\"table is-bordered is-striped is-narrow is-hoverable is-fullwidth is-success\" *ngIf=\"todos.todos.length > 0\">\r\n  <thead>\r\n    <tr>\r\n      <th>Description</th>\r\n      <th>Priority</th>\r\n      <th>Last Updated</th>\r\n      <th>Remove</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr *ngFor=\"let todo of todos.todos\">\r\n      <td class=\"cursor-pointer\" [class.line-through]=\"todo.isCompleted\" (click)=\"toogleTodo(todo._id, todo.isCompleted)\">{{todo.desc}}</td>\r\n      <td class=\"cursor-pointer\" [class.line-through]=\"todo.isCompleted\" (click)=\"toogleTodo(todo._id, todo.isCompleted)\">{{todo.priority}}</td>\r\n      <td class=\"cursor-pointer\" [class.line-through]=\"todo.isCompleted\" (click)=\"toogleTodo(todo._id, todo.isCompleted)\">{{todo.lastUpdated | date: 'dd/MM/yyyy'}}</td>\r\n      <td>\r\n        <button class=\"button is-outlined is-danger\" (click)=\"removeTodo(todo._id)\">REMOVE TODO</button>\r\n      </td>\r\n    </tr>\r\n  </tbody>\r\n</table>"
 
 /***/ }),
 
@@ -655,9 +709,8 @@ module.exports = "<table class=\"table is-bordered is-striped is-narrow is-hover
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoListComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_redux_store__ = __webpack_require__("../../../../@angular-redux/store/lib/src/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_redux_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__angular_redux_store__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__global_modal_actions__ = __webpack_require__("../../../../../src/app/global-modal/actions.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_modal_actions__ = __webpack_require__("../../../../../src/app/common-modal/actions.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__todo_service__ = __webpack_require__("../../../../../src/app/todo/todo.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -672,39 +725,40 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var TodoListComponent = (function () {
-    function TodoListComponent(_todoService, ngRedux) {
+var TodoListComponent = /** @class */ (function () {
+    function TodoListComponent(store, _todoService) {
+        this.store = store;
         this._todoService = _todoService;
-        this.ngRedux = ngRedux;
+        this._todoService.getTodos();
     }
     TodoListComponent.prototype.ngOnInit = function () {
-        this._todoService.getTodos();
+        var _this = this;
+        this.store.select("todos").subscribe(function (todo) {
+            _this.todos = todo;
+            console.log(_this.todos);
+        });
     };
     TodoListComponent.prototype.removeTodo = function (id) {
-        var warningObject = {
-            warning: true,
-            heading: 'Remove todo warning',
+        var confirmObject = {
+            messageType: 'confirm',
+            heading: 'Confirm Modal',
             message: 'Are you sure you want to delete this todo?',
-            id: id
+            removeTodoId: id
         };
-        this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_2__global_modal_actions__["b" /* WARNING */], payload: warningObject });
+        this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_2__common_modal_actions__["a" /* CONFIRM */], payload: confirmObject });
     };
     TodoListComponent.prototype.toogleTodo = function (id, isCompleted) {
         isCompleted = !isCompleted;
         var lastUpdated = new Date();
         this._todoService.toggleTodo(id, isCompleted, lastUpdated);
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_redux_store__["select"])(function (s) { return s.todoing.todos; }),
-        __metadata("design:type", Object)
-    ], TodoListComponent.prototype, "todos", void 0);
     TodoListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'app-todo-list',
             template: __webpack_require__("../../../../../src/app/todo/todo-list/todo-list.component.html"),
             styles: [__webpack_require__("../../../../../src/app/todo/todo-list/todo-list.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__todo_service__["a" /* TodoService */], __WEBPACK_IMPORTED_MODULE_1__angular_redux_store__["NgRedux"]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ngrx_store__["h" /* Store */], __WEBPACK_IMPORTED_MODULE_3__todo_service__["a" /* TodoService */]])
     ], TodoListComponent);
     return TodoListComponent;
 }());
@@ -720,10 +774,10 @@ var TodoListComponent = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_redux_store__ = __webpack_require__("../../../../@angular-redux/store/lib/src/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_redux_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__angular_redux_store__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__actions__ = __webpack_require__("../../../../../src/app/todo/actions.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__global_messages_actions__ = __webpack_require__("../../../../../src/app/global-messages/actions.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__actions__ = __webpack_require__("../../../../../src/app/todo/actions.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_messages__ = __webpack_require__("../../../../../src/app/common-messages/index.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -738,52 +792,61 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var TodoService = (function () {
-    function TodoService(_http, ngRedux) {
+
+var TodoService = /** @class */ (function () {
+    function TodoService(store, _http) {
+        this.store = store;
         this._http = _http;
-        this.ngRedux = ngRedux;
         this.URL = 'https://sleepy-citadel-54178.herokuapp.com/api';
     }
     TodoService.prototype.addTodo = function (todo) {
         var _this = this;
-        this._http.post(this.URL + '/todos', todo).subscribe(function (todo) {
-            _this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__actions__["a" /* ADD_TODO */], todo: todo });
-            _this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_4__global_messages_actions__["c" /* SUCCESS_MESSAGE */], payload: { success: 'Your todo added successfully.' } });
+        this._http.post(this.URL + '/todos', todo)
+            .map(function (todo) { return ({ type: __WEBPACK_IMPORTED_MODULE_4__actions__["a" /* ADD_TODO */], todo: todo }); })
+            .subscribe(function (todo) {
+            _this.store.dispatch(todo);
+            _this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_5__common_messages__["d" /* SUCCESS_MESSAGE */], payload: { success: 'Your todo added successfully.' } });
             setTimeout(function () {
-                _this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_4__global_messages_actions__["b" /* REMOVE_MESSAGE */] });
+                _this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_5__common_messages__["c" /* REMOVE_MESSAGE */] });
             }, 2000);
         });
     };
     TodoService.prototype.getTodos = function () {
         var _this = this;
-        this._http.get(this.URL + '/todos').subscribe(function (todos) {
-            _this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__actions__["b" /* FETCH_TODO_SUCCESS */], todos: todos });
+        this._http.get(this.URL + '/todos')
+            .map(function (todos) { return ({ type: __WEBPACK_IMPORTED_MODULE_4__actions__["b" /* FETCH_TODO_SUCCESS */], todos: todos }); })
+            .subscribe(function (todos) {
+            _this.store.dispatch(todos);
         });
     };
     TodoService.prototype.removeTodo = function (id) {
         var _this = this;
-        this._http.delete(this.URL + '/todos/' + id).subscribe(function (todoId) {
-            _this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__actions__["c" /* REMOVE_TODO */], todoId: todoId });
+        this._http.delete(this.URL + '/todos/' + id)
+            .map(function (todoId) { return ({ type: __WEBPACK_IMPORTED_MODULE_4__actions__["c" /* REMOVE_TODO */], todoId: todoId }); })
+            .subscribe(function (todoId) {
+            _this.store.dispatch(todoId);
         });
     };
     TodoService.prototype.toggleTodo = function (id, isCompleted, lastUpdated) {
         var _this = this;
-        this._http.patch(this.URL + '/todos/' + id, { 'isCompleted': isCompleted, 'lastUpdated': lastUpdated }).subscribe(function (todo) {
-            _this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_3__actions__["d" /* TOOGLE_TODO */], todo: todo });
+        this._http.patch(this.URL + '/todos/' + id, { 'isCompleted': isCompleted, 'lastUpdated': lastUpdated })
+            .map(function (todo) { return ({ type: __WEBPACK_IMPORTED_MODULE_4__actions__["d" /* TOOGLE_TODO */], todo: todo }); })
+            .subscribe(function (todo) {
+            _this.store.dispatch(todo);
             if (isCompleted) {
-                _this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_4__global_messages_actions__["a" /* INFO_MESSAGE */], payload: { info: 'Todo status changed to completed.' } });
+                _this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_5__common_messages__["b" /* INFO_MESSAGE */], payload: { info: 'Todo status changed to completed.' } });
             }
             else {
-                _this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_4__global_messages_actions__["a" /* INFO_MESSAGE */], payload: { info: 'Todo status changed to not completed.' } });
+                _this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_5__common_messages__["b" /* INFO_MESSAGE */], payload: { info: 'Todo status changed to not completed.' } });
             }
             setTimeout(function () {
-                _this.ngRedux.dispatch({ type: __WEBPACK_IMPORTED_MODULE_4__global_messages_actions__["b" /* REMOVE_MESSAGE */] });
+                _this.store.dispatch({ type: __WEBPACK_IMPORTED_MODULE_5__common_messages__["c" /* REMOVE_MESSAGE */] });
             }, 3000);
         });
     };
     TodoService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__angular_redux_store__["NgRedux"]])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngrx_store__["h" /* Store */], __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
     ], TodoService);
     return TodoService;
 }());
@@ -822,7 +885,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
