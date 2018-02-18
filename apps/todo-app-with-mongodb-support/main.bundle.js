@@ -731,7 +731,7 @@ var TodoService = /** @class */ (function () {
         this.store = store;
         this._http = _http;
         this.ng4LoadingSpinnerService = ng4LoadingSpinnerService;
-        this.URL = 'http://localhost:4000/api';
+        this.URL = 'https://sleepy-citadel-54178.herokuapp.com/api';
     }
     TodoService.prototype.addTodo = function (todo) {
         var _this = this;
